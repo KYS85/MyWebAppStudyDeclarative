@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+        xmlns:mc="/mycomponents">
+    <af:document title="MyPage.jsf" id="d1">
+        <af:form id="f1">
+            <af:panelGroupLayout id="pgl1" layout="scroll">
+                <mc:myMenubar menuLabel="Hello" method1="#{myBean.myMethod}">
+                    <f:facet name="moreMenus">
+                        <af:menu text="Edit" id="m1">
+                            <af:commandMenuItem text="Cut" id="cmi1"/>
+                            <af:commandMenuItem text="Copy" id="cmi2"/>
+                        </af:menu>
+                    </f:facet>
+                </mc:myMenubar>
+            </af:panelGroupLayout>
+        </af:form>
+    </af:document>
+</f:view>
